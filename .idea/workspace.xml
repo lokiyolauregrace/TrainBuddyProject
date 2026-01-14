@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e7581b2-4a93-4f9b-8b79-7c563e628cf4" name="Changes" comment="trein update" />
+    <list default="true" id="8e7581b2-4a93-4f9b-8b79-7c563e628cf4" name="Changes" comment="trein update">
+      <change beforePath="$PROJECT_DIR$/euronoom/src/Trein.java" beforeDir="false" afterPath="$PROJECT_DIR$/euronoom/src/Trein.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -85,7 +87,7 @@
       <option name="presentableId" value="Default" />
       <updated>1768317635061</updated>
       <workItem from="1768317637137" duration="3056000" />
-      <workItem from="1768382720957" duration="86000" />
+      <workItem from="1768382720957" duration="419000" />
     </task>
     <task id="LOCAL-00001" summary="change">
       <option name="closed" value="true" />
