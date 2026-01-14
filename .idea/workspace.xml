@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e7581b2-4a93-4f9b-8b79-7c563e628cf4" name="Changes" comment="trein update" />
+    <list default="true" id="8e7581b2-4a93-4f9b-8b79-7c563e628cf4" name="Changes" comment="EuromoonApp update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,7 +92,7 @@
       <option name="presentableId" value="Default" />
       <updated>1768317635061</updated>
       <workItem from="1768317637137" duration="3056000" />
-      <workItem from="1768382720957" duration="7981000" />
+      <workItem from="1768382720957" duration="8282000" />
     </task>
     <task id="LOCAL-00001" summary="change">
       <option name="closed" value="true" />
@@ -118,7 +118,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768383495684</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="EuromoonApp update">
+      <option name="closed" value="true" />
+      <created>1768397414353</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1768397414353</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,7 +146,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="change" />
     <MESSAGE value="trein update" />
-    <option name="LAST_COMMIT_MESSAGE" value="trein update" />
+    <MESSAGE value="EuromoonApp update" />
+    <option name="LAST_COMMIT_MESSAGE" value="EuromoonApp update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
