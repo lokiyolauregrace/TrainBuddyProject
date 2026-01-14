@@ -1,27 +1,28 @@
 public class Trein {
-    public String type;
+    public String typeLocomotief;
     public int aantalWagons;
-    public int capaciteit;
+    public int maxWagons;
 
-    public Trein(String type, int wagons) {
-        this.type = type;
+    public Trein(String typeLocomotief, int aantalWagons) {
+        this.typeLocomotief = typeLocomotief;
 
 
-        int maxWagons;
-        if (type.equals("Class 373")) {
-            maxWagons = 12;
+        if (typeLocomotief.equals("Class 373")) {
+            this.maxWagons = 12;
         } else {
-            maxWagons = 14;
+            this.maxWagons = 14;
         }
 
 
-        if (wagons > maxWagons) {
-            this.aantalWagons = maxWagons;
+        if (aantalWagons > this.maxWagons) {
+            this.aantalWagons = this.maxWagons;
         } else {
-            this.aantalWagons = wagons;
+            this.aantalWagons = aantalWagons;
         }
+    }
 
-
-        this.capaciteit = 80 + (this.aantalWagons * 50);
+    public int berekenCapaciteit() {
+        return 80 + (aantalWagons * 50);
     }
 }
+

@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e7581b2-4a93-4f9b-8b79-7c563e628cf4" name="Changes" comment="trein update" />
+    <list default="true" id="8e7581b2-4a93-4f9b-8b79-7c563e628cf4" name="Changes" comment="trein update">
+      <change afterPath="$PROJECT_DIR$/euronoom/src/Personeel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/euronoom/src/Persoon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/euronoom/src/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/euronoom/src/Passagier.java" beforeDir="false" afterPath="$PROJECT_DIR$/euronoom/src/Passagier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/euronoom/src/Reis.java" beforeDir="false" afterPath="$PROJECT_DIR$/euronoom/src/Reis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/euronoom/src/Trein.java" beforeDir="false" afterPath="$PROJECT_DIR$/euronoom/src/Trein.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,10 +47,16 @@
     &quot;accountId&quot;: &quot;18fc048f-f088-4eea-bfd4-cc49dd744afc&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="38Cy1jnvSxQ0cxqpYJKiBaJivX7" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -85,7 +99,7 @@
       <option name="presentableId" value="Default" />
       <updated>1768317635061</updated>
       <workItem from="1768317637137" duration="3056000" />
-      <workItem from="1768382720957" duration="749000" />
+      <workItem from="1768382720957" duration="3661000" />
     </task>
     <task id="LOCAL-00001" summary="change">
       <option name="closed" value="true" />
@@ -103,7 +117,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768383428690</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="trein update">
+      <option name="closed" value="true" />
+      <created>1768383495684</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1768383495684</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
