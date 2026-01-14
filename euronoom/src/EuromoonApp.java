@@ -17,8 +17,6 @@ public class EuromoonApp {
     }
 
     private static void initialiseerData() {
-        allePassagiers.add(new Passagier("Jan", "Jansen", "90.01.01-123.45", "1990-01-01", "jan@mail.com", "ww123"));
-
         Trein t1 = new Trein("Class 374", 10);
         alleReizen.add(new Reis("Brussel", "Londen", "14:00", t1));
         alleReizen.add(new Reis("Brussel", "Parijs", "16:00", t1));
@@ -27,7 +25,7 @@ public class EuromoonApp {
     private static void runApp() {
         while (true) {
             if (ingelogdePassagier == null) {
-                toonInlogMenu();
+                toonStartMenu();
             } else if (geselecteerdeBestemming == null) {
                 toonBestemmingsMenu();
             } else if (geselecteerdeReis == null) {
@@ -38,6 +36,36 @@ public class EuromoonApp {
                 toonOverzichtMenu();
             }
         }
+    }
+
+    private static void toonStartMenu() {
+        System.out.println("\n--- EUROMOON WELKOM ---");
+        System.out.println("1. Registreren (Account maken)");
+        System.out.println("2. Inloggen");
+        System.out.println("3. Afsluiten");
+        System.out.print("Maak uw keuze: ");
+        String keuze = scanner.nextLine();
+
+        if (keuze.equals("1")) {
+            toonRegistratieMenu();
+        } else if (keuze.equals("2")) {
+            toonInlogMenu();
+        } else if (keuze.equals("3")) {
+            System.exit(0);
+        }
+    }
+
+    private static void toonRegistratieMenu() {
+        System.out.println("\n--- REGISTREREN ---");
+        System.out.print("Voornaam: "); String v = scanner.nextLine();
+        System.out.print("Achternaam: "); String a = scanner.nextLine();
+        System.out.print("Rijksregisternummer: "); String rr = scanner.nextLine();
+        System.out.print("Geboortedatum: "); String gb = scanner.nextLine();
+        System.out.print("E-mail: "); String email = scanner.nextLine();
+        System.out.print("Wachtwoord: "); String ww = scanner.nextLine();
+
+        allePassagiers.add(new Passagier(v, a, rr, gb, email, ww));
+        System.out.println("Account succesvol aangemaakt! U kunt nu inloggen.");
     }
 
     private static void toonInlogMenu() {
