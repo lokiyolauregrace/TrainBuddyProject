@@ -18,7 +18,7 @@ public class Reis {
     }
 
     public int berekenVrijePlaatsen() {
-        // Hier gebruik je de variabele uit de klasse Trein
+
         return trein.capaciteit - verkochteTickets.size();
     }
 
