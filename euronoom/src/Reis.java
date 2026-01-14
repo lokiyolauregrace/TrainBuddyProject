@@ -5,51 +5,38 @@ import java.util.ArrayList;
 public class Reis {
     public String vertrek;
     public String aankomst;
-    public String datum;
+    public String tijdstip;
     public Trein trein;
-    public ArrayList<Personeel> personeelLijst = new ArrayList<>();
     public ArrayList<Ticket> verkochteTickets = new ArrayList<>();
+    public ArrayList<Personeel> personeelLijst = new ArrayList<>();
 
-    public Reis(String vertrek, String aankomst, String datum) {
+    public Reis(String vertrek, String aankomst, String tijdstip, Trein trein) {
         this.vertrek = vertrek;
         this.aankomst = aankomst;
-        this.datum = datum;
+        this.tijdstip = tijdstip;
+        this.trein = trein;
     }
 
-    public void voegTicketToe(Ticket t) {
-        if (trein != null && verkochteTickets.size() < trein.berekenCapaciteit()) {
-            verkochteTickets.add(t);
-            System.out.println("Ticket verkocht aan " + t.passagier.voornaam);
-        } else {
-            System.out.println("FOUT: Geen plek meer op de trein!");
-        }
+    public int berekenVrijePlaatsen() {
+        // Hier gebruik je de variabele uit de klasse Trein
+        return trein.capaciteit - verkochteTickets.size();
     }
 
-    public void printBoardingLijst() {
-        int bestuurders = 0;
-        int stewards = 0;
-        for (Personeel p : personeelLijst) {
-            if (p.functie.equalsIgnoreCase("Bestuurder")) bestuurders++;
-            if (p.functie.equalsIgnoreCase("Steward")) stewards++;
-        }
+    public void annuleerTicket(Passagier p) {
+        verkochteTickets.removeIf(t -> t.passagier.equals(p));
+    }
 
-        if (bestuurders < 1 || stewards < 3) {
-            System.out.println("Kan niet boarden. Te weinig personeel!");
-            return;
-        }
-
-
-        String bestandsnaam = vertrek + "_" + aankomst + "_" + datum + ".txt";
-        try {
-            FileWriter writer = new FileWriter(bestandsnaam);
-            writer.write("Boardinglijst voor " + vertrek + " naar " + aankomst + "\n");
+    public void exporteerLijst() {
+        String fileName = aankomst + "_" + tijdstip.replace(":", "-") + ".txt";
+        try (FileWriter writer = new FileWriter(fileName)) {
+            writer.write("BOARDINGLIJST " + aankomst + "\n");
             for (Ticket t : verkochteTickets) {
-                writer.write("- " + t.passagier.voornaam + " " + t.passagier.achternaam + "\n");
+                if (t.isBevestigd) {
+                    writer.write(t.passagier.voornaam + " " + t.passagier.achternaam + "\n");
+                }
             }
-            writer.close();
-            System.out.println("Bestand " + bestandsnaam + " is aangemaakt.");
         } catch (IOException e) {
-            System.out.println("Er ging iets mis met het schrijven.");
+            System.out.println("Fout bij schrijven.");
         }
     }
 }

@@ -1,28 +1,15 @@
 public class Trein {
-    public String typeLocomotief;
+    public String type;
     public int aantalWagons;
-    public int maxWagons;
+    public int capaciteit; // Deze variabele ontbrak waarschijnlijk
 
-    public Trein(String typeLocomotief, int aantalWagons) {
-        this.typeLocomotief = typeLocomotief;
+    public Trein(String type, int gewensteWagons) {
+        this.type = type;
 
+        int maxWagons = type.equalsIgnoreCase("Class 373") ? 12 : 14;
+        this.aantalWagons = Math.min(gewensteWagons, maxWagons);
 
-        if (typeLocomotief.equals("Class 373")) {
-            this.maxWagons = 12;
-        } else {
-            this.maxWagons = 14;
-        }
-
-
-        if (aantalWagons > this.maxWagons) {
-            this.aantalWagons = this.maxWagons;
-        } else {
-            this.aantalWagons = aantalWagons;
-        }
-    }
-
-    public int berekenCapaciteit() {
-        return 80 + (aantalWagons * 50);
+        // Berekening op basis van de opdracht: 80 + (wagons * 50)
+        this.capaciteit = 80 + (this.aantalWagons * 50);
     }
 }
-

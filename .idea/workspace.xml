@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e7581b2-4a93-4f9b-8b79-7c563e628cf4" name="Changes" comment="trein update">
-      <change afterPath="$PROJECT_DIR$/euronoom/src/Personeel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/euronoom/src/Persoon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/euronoom/src/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/euronoom/src/EuromoonApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/euronoom/src/EuromoonApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/euronoom/src/Passagier.java" beforeDir="false" afterPath="$PROJECT_DIR$/euronoom/src/Passagier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/euronoom/src/Reis.java" beforeDir="false" afterPath="$PROJECT_DIR$/euronoom/src/Reis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/euronoom/src/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/euronoom/src/Ticket.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/euronoom/src/Trein.java" beforeDir="false" afterPath="$PROJECT_DIR$/euronoom/src/Trein.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,6 +63,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.EuromoonApp.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -76,9 +77,9 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/Users/lokiy/OneDrive/Bureau/IT-essentials/Static Web/WC1/Test/Own projects/euromoonproject/euronoom/src/Main.java",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "vcs.Git",
     "vue.rearranger.settings.migration": "true"
   }
@@ -99,7 +100,7 @@
       <option name="presentableId" value="Default" />
       <updated>1768317635061</updated>
       <workItem from="1768317637137" duration="3056000" />
-      <workItem from="1768382720957" duration="3661000" />
+      <workItem from="1768382720957" duration="7597000" />
     </task>
     <task id="LOCAL-00001" summary="change">
       <option name="closed" value="true" />
