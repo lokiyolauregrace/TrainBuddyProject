@@ -1,0 +1,130 @@
+EXAMENPROJECT PROCESS & PROJECT FLOW 
+
+
+
+User-story: registreren 
+* Als passagier
+* Wil ik me kunnen registreren 
+* Zodat ik een persoonlijk account heb om mijn treinreizen te beheren
+
+Acceptance Criteria:
+
+Scenario 1: Ongeldig e-mailadres
+Given: de passagier bevindt zich in het registratiemenu 
+When: de passagier een foute e-mailadres invoert dat niet voldoet aan de acceptatiecriteria van de app
+Then: toont de app een foutmelding 
+
+Scenario 2: Geldig e-mailadres
+Given: de passagier bevindt zich in het registratiemenu
+When: de passagier een e-mailadres invoert dat voldoet aan de acceptatiecriteria van de app 
+Then: wordt de passagier succesvol geregistreerd in de app 
+
+
+User-story: Persoonlijk inloggen
+* Als passagier
+* Wil ik mij kunnen inloggen 
+* Zodat ik mijn persoonlijke account kan beheren
+
+Acceptance Criteria:
+
+Scenario 1: Foute inloggegevens
+Given: de passagier bevindt zich in het inlogmenu 
+When: de passagier foute inloggegevens invoert
+Then: toont de app een foutmelding
+
+        Scenario 2: Correcte inloggegevens
+Given: de passagier bevindt zich in het inlogmenu 
+When: de passagier zijn inloggegevens correct invoert
+Then: is de passagier ingelogd en wordt doorgestuurd naar het keuzemenu
+
+
+User-story: Keuze van bestemmingsmenu 
+* Als passagier
+* Wil ik een bestemming kunnen kiezen
+* Zodat ik naar de juiste bestemming kan reizen
+
+Acceptance Criteria:
+
+Scenario 1: Ongeldige bestemming 
+Given: de passagier is ingelogd en bevindt zich in het bestemmingsmenu 
+When: de passagier een station invoert waar geen treinen naartoe rijden
+Then: toont de app een foutmelding en moet de passagier een ander station kiezen
+
+        Scenario 2: Geldige bestemming
+Given: de passagier is ingelogd en bevindt zich in het bestemmingsmenu
+When: de passagier een station invoert waar wel treinen naartoe rijden
+Then: wordt de passagier doorgestuurd naar de lijst met beschikbare treinen
+
+
+User-story: Treinbeschikbaarheden
+* Als passagier
+* Wil ik kunnen zien welke trein beschikbaar zijn en hoeveel plaatsen er nog vrij zijn 
+* Zodat ik weet welke trein(en) ik kan nemen 
+
+
+Acceptance Criteria:
+
+        Scenario 1: Treinbeschikbaarheden bekijken
+Given: de passagier is ingelogd, heeft een bestemming gekozen en bevindt zich in het menu “Treinbeschikbaarheden”
+When: de passagier de treinbeschikbaarheden voor een bepaald tijdstip opvraagt
+Then: toont de app welke treinen er rijden op dat tijdstip en hoeveel plaatsen er nog beschikbaar\bezet zijn in de trein
+
+Scenario 2: Geen treinen beschikbaar
+Given: de passagier is ingelogd, heeft een bestemming gekozen en bevindt zich in het menu “Treinbeschikbaarheden”
+When: er geen treinen beschikbaar zijn op het gekozen tijdstip
+Then: toont de app een melding dat er geen treinen beschikbaar zijn en kan de passagier een ander tijdstip kiezen
+
+User-story: Ticket kopen
+* Als passagier
+* Wil ik een ticket kunnen kopen
+* Zodat ik legaal met de trein kan reizen 
+
+
+
+
+
+Acceptance Criteria:
+
+        Scenario 1: Ticket kopen bevestigen
+Given: de passagier is ingelogd in de applicatie en heeft een beschikbare trein geselecteerd
+When: de passagier naar “Ticket kopen” gaat, de prijs van het ticket ziet en de aankoop bevestigt door “JA” te kiezen
+Then: wordt het ticket succesvol gekocht
+ 
+Scenario 2: Ticket kopen annuleren
+Given: de passagier is ingelogd in de applicatie en heeft een beschikbare trein geselecteerd
+When: de passagier naar “Ticket kopen” gaat, de prijs van het ticket ziet en de aankoop annuleert door “NEE” te kiezen
+Then: wordt het ticket niet gekocht en wordt de passagier teruggestuurd naar het vorige menu
+ 
+User-story: Overzicht aankoop 
+* Als passagier
+* Wil ik een overzicht van mijn ticketaankopen kunnen bekijken 
+* Zodat ik kan controleren of mijn persoonlijke gegevens en de stations op mijn treinticket correct zijn
+
+ Acceptance Criteria:
+
+Scenario 1: Gegevens onjuist ? ticket annuleren
+Given: de passagier is ingelogd en heeft een treinticket gekocht
+When: de passagier “Overzicht aankopen” opent en merkt dat zijn persoonlijke gegevens of stations fout zijn op het treinticket
+Then: kan de passagier kiezen voor “Treinticket annuleren”
+
+Scenario 2: Gegevens correct ? ticket bevestigen
+Given: de passagier is ingelogd en heeft een treinticket gekocht
+When: de passagier “Overzicht aankopen” opent en ziet dat zijn persoonlijke gegevens en stations correct zijn op het treinticket
+Then: kan de passagier kiezen voor “Treinticket bevestigen”
+
+User-story: Uitloggen 
+* Als passagier
+* Wil ik mij kunnen uitloggen 
+* Zodat mijn account veilig wordt afgesloten
+
+ Acceptance Criteria:
+
+Scenario 1: Succesvol uitloggen
+Given: de passagier is ingelogd in de applicatio
+When: de passagier kiest voor “Uitloggen”
+Then: wordt de passagier uitgelogd en doorgestuurd naar het inlogscherm
+
+Scenario 2: Uitloggen annuleren
+Given: de passagier is ingelogd in de applicatie
+When: de passagier kiest voor “Uitloggen” maar annuleert deze actie
+Then: blijft de passagier ingelogd en wordt hij teruggestuurd naar het vorige menu
